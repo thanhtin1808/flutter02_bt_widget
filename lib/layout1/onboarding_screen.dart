@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter02_bt_widget/layout1/home_shop1_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -44,7 +45,7 @@ class OnboardingScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => const NextScreen()),
+                    MaterialPageRoute(builder: (context) => const HomeShop1Screen()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -99,31 +100,4 @@ class CurvedClipper extends CustomClipper<Path> {
   bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
 
-// Placeholder for your next screen
-class NextScreen extends StatelessWidget {
-  const NextScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Next Screen'),
-        backgroundColor: const Color(0xFF7BA05B),
-        foregroundColor: Colors.white,
-      ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.check_circle, size: 80, color: Color(0xFF7BA05B)),
-            SizedBox(height: 20),
-            Text(
-              'Welcome to the app!',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
