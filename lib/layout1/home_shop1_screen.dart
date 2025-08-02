@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomeShop1Screen extends StatelessWidget {
-  const HomeShop1Screen({Key? key}) : super(key: key);
+  const HomeShop1Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -126,11 +126,11 @@ class _CategoryCard extends StatelessWidget {
   final String image; // Use emoji or asset path
 
   const _CategoryCard({
-    Key? key,
+    super.key,
     required this.icon,
     required this.label,
     required this.image,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
