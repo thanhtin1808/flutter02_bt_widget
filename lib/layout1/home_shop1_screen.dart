@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter02_bt_widget/layout1/shop_item_list.dart';
 
 class HomeShop1Screen extends StatelessWidget {
   const HomeShop1Screen({super.key});
@@ -15,7 +16,7 @@ class HomeShop1Screen extends StatelessWidget {
             SizedBox(height: 20),
             // Balance Card
             Container(
-              padding: const EdgeInsets.all(20),  
+              padding: const EdgeInsets.all(20),
               child: Row(
                 children: [
                   Expanded(
@@ -24,10 +25,7 @@ class HomeShop1Screen extends StatelessWidget {
                       children: const [
                         Text(
                           'Your Balance',
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.black87,
-                          ),
+                          style: TextStyle(fontSize: 16, color: Colors.black87),
                         ),
                         SizedBox(height: 4),
                         Text(
@@ -41,12 +39,23 @@ class HomeShop1Screen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
-                    width: 40,
-                    height: 40,
-                    decoration: const BoxDecoration(
-                      color: Color(0xFF5b913a),
-                      shape: BoxShape.circle,
+                  // Tap here to shop list items
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ShopItemListScreen(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      width: 40,
+                      height: 40,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFF5b913a),
+                        shape: BoxShape.circle,
+                      ),
                     ),
                   ),
                 ],
@@ -91,13 +100,15 @@ class HomeShop1Screen extends StatelessWidget {
                 childAspectRatio: 0.95,
                 children: [
                   _CategoryCard(
-                    icon: Icons.circle, // Replace with your asset or custom icon
+                    icon:
+                        Icons.circle, // Replace with your asset or custom icon
                     label: 'Fruit',
-                    image: '🍊', // Emoji for demo, replace with Image.asset if needed
+                    image:
+                        '🍊', // Emoji for demo, replace with Image.asset if needed
                   ),
                   _CategoryCard(
                     icon: Icons.circle,
-                    label: 'Vegetable', 
+                    label: 'Vegetable',
                     image: '🥬',
                   ),
                   _CategoryCard(
@@ -105,11 +116,7 @@ class HomeShop1Screen extends StatelessWidget {
                     label: 'Cookies',
                     image: '🍩',
                   ),
-                  _CategoryCard(
-                    icon: Icons.circle,
-                    label: 'Meat',
-                    image: '🥩',
-                  ),
+                  _CategoryCard(icon: Icons.circle, label: 'Meat', image: '🥩'),
                 ],
               ),
             ),
@@ -142,10 +149,7 @@ class _CategoryCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            image,
-            style: const TextStyle(fontSize: 48),
-          ),
+          Text(image, style: const TextStyle(fontSize: 48)),
           const SizedBox(height: 20),
           Text(
             label,
