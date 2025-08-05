@@ -133,7 +133,6 @@ class _CategoryCard extends StatelessWidget {
   final String image; // Use emoji or asset path
 
   const _CategoryCard({
-    super.key,
     required this.icon,
     required this.label,
     required this.image,

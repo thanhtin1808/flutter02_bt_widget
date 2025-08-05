@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter02_bt_widget/main_nav_screen.dart';
-import 'layout1/onboarding_screen.dart'; // Import the onboarding_screen.dart file
+// Import the onboarding_screen.dart file
 
 void main() {
   runApp(const MyApp());

@@ -96,7 +96,7 @@ class _ExploreCard extends StatelessWidget {
   child: Center(
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: const [
+      children: [
         Icon(Icons.image, size: 60, color: Colors.white),
         SizedBox(height: 8),
         Text(

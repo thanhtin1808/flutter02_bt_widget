@@ -186,7 +186,7 @@ class Shop2ItemListScreen extends StatelessWidget {
                   itemCount: categories.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 4,
-                    mainAxisSpacing: 16,
+                    mainAxisSpacing: 16,  
                     crossAxisSpacing: 8,
                     childAspectRatio: 0.85,
                   ),

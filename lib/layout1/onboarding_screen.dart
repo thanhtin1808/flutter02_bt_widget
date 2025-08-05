@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter02_bt_widget/layout1/home_shop1_screen.dart';
 import 'package:flutter02_bt_widget/main_nav_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
