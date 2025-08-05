@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter02_bt_widget/main_nav_screen.dart';
 import 'layout1/onboarding_screen.dart'; // Import the onboarding_screen.dart file
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home:
-          const OnboardingScreen(), // Launch the OnboardingScreen from onboarding_screen.dart
+          const MainNavScreen(), // Launch the OnboardingScreen from onboarding_screen.dart
       debugShowCheckedModeBanner: false,
     );
   }

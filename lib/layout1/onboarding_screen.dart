@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter02_bt_widget/layout1/home_shop1_screen.dart';
+import 'package:flutter02_bt_widget/main_nav_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -45,7 +46,7 @@ class OnboardingScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => const HomeShop1Screen()),
+                    MaterialPageRoute(builder: (context) => const MainNavScreen()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
